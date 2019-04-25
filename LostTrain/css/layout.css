@@ -1,0 +1,187 @@
+section,header,article,nav{
+    display: block;
+}
+*{padding: 0;margin: 0;}
+body{
+    margin: 1em 10%;
+    max-width: 80em;
+}
+header{
+    background-repeat: no-repeat;
+    background-position: center right;
+    border-width: .1em;
+    border-style: solid;
+    border-bottom-width: 0;
+}
+
+header nav{
+    margin-top: -4px;
+    padding-left: 10%;
+}
+header img{
+    width: 30%;
+}
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    border-left-width: .1em;
+    border-left-style: solid;
+}
+header nav li{
+    display: inline;
+    position: relative;
+}
+header nav li a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: .5em 2em;
+    border-right: .1em solid;
+}
+article{
+    border-width: .1em;
+    border-style: solid;
+    border-top-width: 0;
+    padding: 2em 10%;
+    line-height: 1.8em;
+}
+article p{
+    margin: 1em 0;
+}
+article .mar_bottom{
+    margin-bottom: 4em;
+}
+article img{
+    border: .1em solid;
+    outline: .1em solid;
+}
+
+/*头部导航定位超链接样式*/
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here.active{
+    color: #eef;
+    background-color: #779;
+}
+
+/*幻灯片*/
+article #indicate{
+    float: right;
+    width: 20%;
+    height: 120px;
+    border: .1em solid #779;
+    box-shadow: 1px 1px 3px #779;
+}
+
+
+
+/*photos页面图片滚动*/
+article .scroll{
+    width: 70%;
+    height: 120px;
+    overflow: hidden;
+    border: 1px solid #666;
+    margin-bottom: 1em;
+}
+article .scroll ul{
+    position: relative;
+    left: 0;
+}
+article .scroll li{
+    float: left;
+    list-style: none;
+    width: 200px;
+    height: 120px;
+    margin-right: 5px;
+}
+article .scroll li img{
+    width: 200px;
+    height: 120px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 3px 3px #333;
+}
+
+/*photos页面图片库*/
+article .show{
+    margin-top: 4em;
+    background: #ccc;
+    padding: 1em 5%;
+    border: 1px solid #333;
+}
+article .show li{
+    display: inline-block;
+    padding: 1em;
+}
+article .show li a{
+    background: transparent;
+}
+article .show li img{
+    width: 80px;
+    border: none;
+    outline: none;
+}
+article .show. img{
+    clear: both;
+    display: block;
+}
+article .show #placeholder{
+    margin-top: 1em;
+    width: 70%;
+    outline: none;
+    border: 20px solid #fff;
+}
+
+/*photos页面css3图片效果*/
+article .scale{
+    padding: 4em 10%;
+    border: 1px solid #333;
+    background: #999;
+    text-align: center;
+}
+article .scale img{
+    border: 10px solid white;
+    outline: none;
+    display: inline;
+    width: 180px;
+    height: 200px;
+    box-shadow:5px 5px 3px #ccc;
+    position:relative;
+    transition: all .5s;
+    z-index: 1;
+}
+article .scale img.pic_1{
+    transform: rotate3d(0,0,1,-10deg);-webkit-transform:rotate3d(0,0,1,-10deg);
+}
+article .scale img.pic_2{
+    transform: rotate3d(0,0,1,10deg);-webkit-transform:rotate3d(0,0,1,10deg);
+}
+article .scale .pic:hover{
+    transform: rotate3d(0,0,0,0deg) scale(1.5,1.5);z-index: 2;
+}
+
+
+/*Live页面表格*/
+td{
+    padding: .5em 3em;
+}
+th{
+    color: #edc;
+    background-color: #455;
+}
+tr td{
+    color: #223;
+    background-color: #eb6;
+}
+dt{
+    margin-right: 1em;
+}
+dd{
+    margin-right: 3em;
+}
+
+/*Contact页面表单*/
+fieldset{
+    border: 0;
+}
